@@ -3,11 +3,11 @@ import Nav from '../../Nav/NavContainer';
 import styled from '@emotion/styled'
 
 var black = "#2D2D2D";
-var violet = "#9235F3";
+var pink = "#FFB8B7";
 var blue = "#3B3D9A";
 
 const TextTitle = styled.h2`
-  color: ${violet};
+  color: ${pink};
   font-family: NetflixBold;
   font-size: 45px;
   text-align : center;
@@ -19,16 +19,28 @@ align-content: flex-start;
 
 `
 const TitleH3 = styled.h3`
-color: ${violet};
+color: ${pink};
 
 `
 const Resume = styled.article`
 padding: 1rem;
 `
+
+const Back = styled.a`
+  color: ${pink};
+  padding: 0px 0px 5px 10px;
+  a {text-decoration:none} 
+  a {color: ${pink}} 
+  text-decoration: underline;
+  font-size: 1.5rem;
+
+`
+
 const Info = ({data}) => (
   <div className="home">
     <Nav/>
     <TextTitle>{data.Title}</TextTitle>
+    <Back><div><a href="javascript:history.go(-1)">Retour</a></div></Back>
     
     <Section>
     <img src={data.Poster}/>

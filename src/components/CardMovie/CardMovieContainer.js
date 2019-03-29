@@ -19,7 +19,7 @@ class CardMovieContainer extends Component {
             localstorage.addToLocalStorage('likeList',this.props.data);
             console.log('LIKE LIST :',localstorage.getLikeList());
             this.setState({
-                colorLike: "#9235F3",
+                colorLike: "#ffb8b8",
                 like: true
             });
         }

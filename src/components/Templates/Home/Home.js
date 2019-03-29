@@ -7,12 +7,12 @@ var white = "#FFFFFF";
 var black = "#3B393C";
 var red = "#C03A2B";
 var blue ="#3B3D9A";
-var violet = "#9235F3";
-var gris = "#DCDCDC";
+var pink = "#ffb8b8";
+var gris = "#f6f6f6";
 
 
 const TextTitle = styled.h2`
-  color: ${violet};
+  color: ${pink};
   font-family: NetflixBold;
   font-size: 64px;
 `
@@ -25,7 +25,7 @@ const Home = ({handleClick, dataPopular, dataBoxOffice}) => (
     <Nav/> 
     <div className="row">
       <TextTitle className="col-md-12 center-md" key="1">
-        Box-Office
+        Best Movies
       </TextTitle>
       {dataBoxOffice.length > 0 && (
         dataBoxOffice.map(movie => (
@@ -45,7 +45,7 @@ const Home = ({handleClick, dataPopular, dataBoxOffice}) => (
       </div>
     <div className="row">
     <TextTitle className="col-md-12 center-md" key="2">
-        Popular
+        Populaires
     </TextTitle>
       {dataPopular.length > 0 && (
           dataPopular.map(movie => (

@@ -4,7 +4,7 @@ import styled from '@emotion/styled'
 var white = "#FFFFFF";
 var black = "#2D2D2D";
 var red = "#C03A2B";
-var violet = "#9235F3";
+var pink = "#ffb8b8";
 
 const Button = styled.button`
   color: ${black};
@@ -14,8 +14,8 @@ const Button = styled.button`
   background: ${white}; 
   cursor:pointer;
   :hover {
-    color: ${violet};
-    border: 2px solid ${violet};
+    color: ${pink};
+    border: 2px solid ${pink};
   }
 `
 const TextButton = styled.span`

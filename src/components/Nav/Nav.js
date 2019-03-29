@@ -8,7 +8,7 @@ var white = "#FFFFFF";
 var black = "#2D2D2D";
 var red = "#C03A2B";
 var blue = "#3B3D9A";
-var violet = "#9235F3";
+var pink = "#ffb8b8";
 
 const TextLink = styled.h2`
     text-decoration:none;
@@ -16,7 +16,7 @@ const TextLink = styled.h2`
     font-size: 2em;
     color: ${white};
     :hover {
-      color: ${violet};
+      color: ${pink};
     }
 `
 
@@ -39,16 +39,6 @@ const Nav = ({handleClick}) => (
       </div>
       <div className="col-md-8 center-md">
         <SearchBar/>
-      </div>
-      <div className="col-md-1 end-xs">
-        <Link style={{ textDecoration: 'none'}} to="/list">
-          <TextLink>List</TextLink>
-        </Link>
-      </div>
-      <div className="col-md-2 end-xs">
-        <Link style={{ textDecoration: 'none'}} to="/storybook">
-          <TextLink>Storybook</TextLink>
-        </Link>
       </div>
     </div>
   </NavContainer>

@@ -43,12 +43,6 @@ yarn
 yarn start
 ```
 
-## Storybook App
-
-``` bash
-yarn run storybook
-```
-
 And then you can access the Web App by opening http://localhost:3000 on your web browser and acces the [Storybook App](http://localhost:9009).
 
 # Author
